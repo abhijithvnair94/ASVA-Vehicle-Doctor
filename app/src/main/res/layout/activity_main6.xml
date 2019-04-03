@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.phone.Main6Activity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick the Date" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <DatePicker
+            android:id="@+id/scheduleTimePicker"
+            android:layout_width="220dp"
+            android:layout_height="320dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="190dp"
+            android:layout_height="300dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+
+        <Button
+            android:id="@+id/selectButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="onDateSelectedButtonClick"
+            android:text="Set notification for this date"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
